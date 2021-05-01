@@ -60,7 +60,7 @@ root
 
 ## Quick Start
 
-1. 安装 [Nacos安装](https://nacos.io/zh-cn/docs/quick-start.html) （Nacos的安装请查看官网，本文档不再详细介绍。）
+1. 安装 [Nacos 安装](https://nacos.io/zh-cn/docs/quick-start.html) （Nacos的安装请查看官网，本文档不再详细介绍。）
 
 2. 启动 Nacos （本实验使用单机启动的方式）
 
@@ -70,7 +70,7 @@ root
 startup.cmd -m standalone
 ```
 
-3. 启动 Sentinel 控制台 Sentinel Console 安装及启动请参考官网 (Sentinel Dashboard)[https://github.com/alibaba/Sentinel/wiki/Dashboard]
+3. 启动 Sentinel 控制台 Sentinel Console 安装及启动请参考官网 [Sentinel Dashboard](https://github.com/alibaba/Sentinel/wiki/Dashboard)
 本示例使用 8858 端口启动
 
 4. clone 工程
@@ -128,6 +128,6 @@ java -jar consumer/target/consumer-1.0.0-SNAPSHOT.jar --server.port=10020
 
 ## Other
 
-+ Nacos控制台： [http://localhost:8848/nacos/](http://localhost:8848/nacos/)
++ Nacos 控制台： [http://localhost:8848/nacos/](http://localhost:8848/nacos/)
 + Sentinel 控制台： [http://localhost:8858/](http://localhost:8858/) 
 
