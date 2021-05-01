@@ -4,8 +4,8 @@
 
 本项目为 SpringCloudAlibabaNacos 的学习测试用的 Demo。主要包含如下功能：
 
-+ provider 负责提供HTTP服务
-+ consumer 负责调用HTTP服务
++ provider 负责提供 HTTP 服务
++ consumer 负责调用 HTTP 服务
 + consumer 使用 feign 远程调用 provider 服务， 并且可以负载均衡
 + consumer 使用 sentinel 进行服务熔断
 + provider 和 consumer 通过 nacos 进行服务的发现与注册
@@ -15,10 +15,10 @@
 ## Environment
 
 + Windows 10
-+ Java Jdk 1.8.0_161
++ Java Jdk 1.8.0
 + Maven 3.6.3
 + Nacos 1.4.1
-+ Sentinel Console
++ Sentinel Console 1.8.1
 
 ## Project Structure
 
@@ -60,7 +60,7 @@ root
 
 ## Quick Start
 
-1. 安装 [Nacos](https://nacos.io/zh-cn/docs/quick-start.html) （Nacos的安装请查看官网，本文档不再详细介绍。）
+1. 安装 [Nacos安装](https://nacos.io/zh-cn/docs/quick-start.html) （Nacos的安装请查看官网，本文档不再详细介绍。）
 
 2. 启动 Nacos （本实验使用单机启动的方式）
 
@@ -117,14 +117,14 @@ java -jar consumer/target/consumer-1.0.0-SNAPSHOT.jar --server.port=10020
 
 浏览器访问如下路径
 
-1. [http://localhost:10020/consumer/template/provider](http://localhost:10020/consumer/template/provider)
-2. [http://localhost:10020/consumer/feign/provider](http://localhost:10020/consumer/feign/provider)
+1. [http://localhost:10020/consumer/template/provider](http://localhost:10020/consumer/template/provider) （consumer 使用 restTemplate 负载均衡访问 provider 服务）
+2. [http://localhost:10020/consumer/feign/provider](http://localhost:10020/consumer/feign/provider) （consumer 使用 feign 负载均衡访问 provider 服务）
 
 显示如下现象证明已启动成功
 
 1. 后台无报错，且多次访问上述地址时画面端口号轮询切换。
-2. 停掉一个 provider, 服务依然可以正常响应，但是端口号不再改变
-3. 两个都 provider 都停掉， 提示自定义错误信息， 而不是默认 500 错误画面。
+2. 停掉一个 provider, 服务依然可以正常响应，但是端口号不再改变。
+3. 两个 provider 都停掉， 服务返回自定义错误信息， 而不是默认的错误画面。
 
 ## Other
 
