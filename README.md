@@ -126,7 +126,7 @@ java -jar consumer/target/consumer-1.0.0-SNAPSHOT.jar --server.port=10020
 2. 停掉一个 provider, 服务依然可以正常响应，但是端口号不再改变
 3. 两个都 provider 都停掉， 提示自定义错误信息， 而不是默认 500 错误画面。
 
-# Other
+## Other
 
 + Nacos控制台： [http://localhost:8848/nacos/](http://localhost:8848/nacos/)
 + Sentinel 控制台： [http://localhost:8858/](http://localhost:8858/) 
