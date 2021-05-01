@@ -70,8 +70,7 @@ root
 startup.cmd -m standalone
 ```
 
-3. 启动 Sentinel 控制台 Sentinel Console 安装及启动请参考官网 [Sentinel Dashboard](https://github.com/alibaba/Sentinel/wiki/Dashboard)
-本示例使用 8858 端口启动
+3. 启动 Sentinel 控制台 Sentinel Console 安装及启动请参考官网 [Sentinel Dashboard](https://github.com/alibaba/Sentinel/wiki/Dashboard)，本示例将使用 8858 端口启动 Sentinel 控制台
 
 4. clone 工程
 
