@@ -62,7 +62,7 @@ root
 
 ## Quick Start
 
-1. 安装 [Nacos 安装](https://nacos.io/zh-cn/docs/quick-start.html) （Nacos的安装请查看官网，本文档不再详细介绍。）
+1. [安装 Nacos](https://nacos.io/zh-cn/docs/quick-start.html) （Nacos的安装请查看官网，本文档不再详细介绍。）
 
 2. 启动 Nacos （本实验使用单机启动的方式）
 
