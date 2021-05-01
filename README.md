@@ -77,13 +77,13 @@ startup.cmd -m standalone
 4. clone 工程
 
 ```shell
-git clone 
+git clone https://github.com/cao-shd/spring-cloud-alibaba-nacos.git
 ```
 
 5. 进入工程
 
 ```shell
-cd 
+cd spring-cloud-alibaba-nacos
 ```
 
 6. 导入 nacos 配置
