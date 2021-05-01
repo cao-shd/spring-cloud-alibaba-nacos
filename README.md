@@ -26,20 +26,21 @@
 root
 ├─ consumer
 │  └─ src
-│    ├─ main
-│    │  ├─ java
-│    │  │  └─ spring.cloud.alibaba.nacos.consumer
-│    │  │     ├─ config
-│    │  │     │  └─ ConsumerConfiguration.java
-│    │  │     ├─ controller
-│    │  │     │  └─ ConsumeController.java
-│    │  │     └─ service
-│    │  │     │ └─ IProviderService.java
-│    │  │     └─ ConsumerApplication.java
-│    │  └─resources
-│    │    ├─application.yml.bak
-│    │    └─bootstrap.properties
-│    └─ pom.xml
+│     ├─ main
+│     │  ├─ java
+│     │  │  └─ spring.cloud.alibaba.nacos.consumer
+│     │  │     ├─ config
+│     │  │     │  └─ ConsumerConfiguration.java
+│     │  │     ├─ controller
+│     │  │     │  └─ ConsumeController.java
+│     │  │     └─ service
+│     │  │     │ └─ IProviderService.java
+│     │  │     └─ ConsumerApplication.java
+│     │  └─ resources
+│     │     ├─ application.yml.bak
+│     │     ├─ bootstrap-test.properties
+│     │     └─ bootstrap.properties
+│     └─ pom.xml
 ├─ dependencies
 │  └─ pom.xml
 ├─ provider
@@ -52,6 +53,7 @@ root
 │     │  │     └─ ProviderApplication.java
 │     │  └─ resources
 │     │     ├─ application.yml.bak
+│     │     ├─ bootstrap-test.properties
 │     │     └─ bootstrap.properties
 │     └─ pom.xml
 ├─ pom.xml
@@ -70,7 +72,7 @@ root
 startup.cmd -m standalone
 ```
 
-3. 启动 Sentinel 控制台 Sentinel Console 安装及启动请参考官网 [Sentinel Dashboard](https://github.com/alibaba/Sentinel/wiki/Dashboard)，本示例将使用 8858 端口启动 Sentinel 控制台
+3. 启动 Sentinel 控制台 Sentinel Console 安装及启动请参考官网 [Sentinel Dashboard](https://github.com/alibaba/Sentinel/wiki/Dashboard)，本示例将使用 8858 端口启动 Sentinel 控制台。
 
 4. clone 工程
 
@@ -116,8 +118,8 @@ java -jar consumer/target/consumer-1.0.0-SNAPSHOT.jar --server.port=10020
 
 浏览器访问如下路径
 
-1. [http://localhost:10020/consumer/template/provider](http://localhost:10020/consumer/template/provider) （consumer 使用 restTemplate 负载均衡访问 provider 服务）
-2. [http://localhost:10020/consumer/feign/provider](http://localhost:10020/consumer/feign/provider) （consumer 使用 feign 负载均衡访问 provider 服务）
+1. [http://localhost:10020/consumer/template/provider](http://localhost:10020/consumer/template/provider) （consumer 使用 restTemplate 负载均衡访问 provider 服务。）
+2. [http://localhost:10020/consumer/feign/provider](http://localhost:10020/consumer/feign/provider) （consumer 使用 feign 负载均衡访问 provider 服务。）
 
 显示如下现象证明已启动成功
 
